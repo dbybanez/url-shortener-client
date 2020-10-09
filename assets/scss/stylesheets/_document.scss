@@ -1,0 +1,19 @@
+/*
+ ** Document
+ */
+
+body {
+	font-family: 'Nunito', sans-serif;
+  background-color: $ghost-white;
+}
+
+#__nuxt, #__layout, html, body, .app {
+  height: 100%;
+}
+
+body {
+  .app {
+    display: flex;
+    flex-direction: column;
+  }
+}
