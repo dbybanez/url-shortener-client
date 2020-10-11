@@ -5,8 +5,9 @@
         <div class="row align-items-center justify-content-center h-100">
           <div class="col-12 col-md-5 col-lg-4 col-xl-3 text-center">
             <h1 class="text-rbl mb-5">
-              tinyy.link
+              Logo
             </h1>
+            <Default />
           </div>
         </div>
       </div>
@@ -15,7 +16,12 @@
 </template>
 
 <script>
-export default {}
+import Default from '../components/Default'
+export default {
+  components: {
+    Default
+  }
+}
 </script>
 
 <style></style>

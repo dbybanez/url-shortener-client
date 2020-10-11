@@ -11,6 +11,10 @@ export default {
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
       {
         rel: 'stylesheet',
+        href: 'https://fonts.googleapis.com/css2?family=Nunito:wght@700;900&display=swap'
+      },
+      {
+        rel: 'stylesheet',
         href: 'https://fonts.googleapis.com/css?family=Material+Icons+Round'
       }
     ]
