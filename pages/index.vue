@@ -7,7 +7,10 @@
             <h1 class="text-rbl mb-5 text-center">
               Logo
             </h1>
-            <Default />
+            <h3 class="text-rbl text-center" v-if="getGeneratedStatus">Congratulations!</h3>
+            <p class="text-center mb-4" v-if="getGeneratedStatus">You have created a tinyy.link! <br />You're tinyy.link is:</p>
+            <Default v-if="!getGeneratedStatus"/>
+            <Generated v-if="getGeneratedStatus"/>
           </div>
         </div>
       </div>
@@ -16,10 +19,19 @@
 </template>
 
 <script>
+import { mapGetters } from 'vuex'
 import Default from '../components/Default'
+import Generated from '../components/Generated'
+
 export default {
   components: {
-    Default
+    Default,
+    Generated
+  },
+  computed: {
+    ...mapGetters({
+      getGeneratedStatus: 'getGeneratedStatus'
+    })
   }
 }
 </script>

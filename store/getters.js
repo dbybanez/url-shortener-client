@@ -4,5 +4,7 @@ export default {
   getUrlHasError: state => state.urlHasError,
   getUrlErrorMessage: state => state.urlErrorMessage,
   getSlugHasError: state => state.slugHasError,
-  getSlugErrorMessage: state => state.slugErrorMessage
+  getSlugErrorMessage: state => state.slugErrorMessage,
+  getGeneratedStatus: state => state.generated,
+  getshowSaveModalStatus: state => state.showSaveModal
 }

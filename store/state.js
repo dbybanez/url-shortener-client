@@ -4,5 +4,7 @@ export default () => ({
   urlHasError: false,
   urlErrorMessage: '',
   slugHasError: false,
-  slugErrorMessage: ''
+  slugErrorMessage: '',
+  generated: false,
+  showSaveModal: false
 })

@@ -1,13 +1,17 @@
 import * as Yup from 'yup'
+// import axios from 'axios'
 
 export default {
   validate ({ state, dispatch }, val) {
-    dispatch('validateURL', val.url)
-    dispatch('validateSlug', val.slug)
+    const url = val.url
+    const slug = val.slug
+    dispatch('validateURL', url)
+    dispatch('validateSlug', slug)
     if (!state.urlHasError && !state.slugHasError) {
-      console.log('No errors!')
+      // console.log('No errors!')
+      dispatch('generateURL', { url, slug })
     } else {
-      console.log('There are errors')
+      // console.log('There are errors')
       console.log('URL: ' + state.urlHasError)
       console.log('Slug: ' + state.slugHasError)
     }
@@ -64,5 +68,24 @@ export default {
     const slugHasError = false
     const slugMsg = ''
     commit('setSlugErrorStatus', { slugHasError, slugMsg })
+  },
+  generateURL ({ commit }, data) {
+    const generated = true
+    commit('setGeneratedStatus', { generated })
+  },
+  generateAnother ({ commit }) {
+    commit('resetAll')
+  },
+  saveURL ({ state, commit }) {
+    let status = state.showSaveModal
+    const body = document.body
+    if (status) {
+      status = false
+      body.classList.remove('modal-open')
+    } else {
+      status = true
+      body.classList.add('modal-open')
+    }
+    commit('setShowModalStatus', { status })
   }
 }
