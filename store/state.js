@@ -6,5 +6,5 @@ export default () => ({
   slugHasError: false,
   slugErrorMessage: '',
   generated: false,
-  showSaveModal: false
+  isModalOpen: false
 })

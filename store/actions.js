@@ -76,8 +76,12 @@ export default {
   generateAnother ({ commit }) {
     commit('resetAll')
   },
-  saveURL ({ state, commit }) {
-    let status = state.showSaveModal
+  saveURL ({ state, commit, dispatch }) {
+    dispatch('openCloseModal')
+    // commit('setShowModalStatus', { status })
+  },
+  openCloseModal ({ state, commit }) {
+    let status = state.isModalOpen
     const body = document.body
     if (status) {
       status = false
@@ -86,6 +90,5 @@ export default {
       status = true
       body.classList.add('modal-open')
     }
-    commit('setShowModalStatus', { status })
   }
 }

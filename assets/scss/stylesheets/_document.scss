@@ -26,3 +26,9 @@ body {
     font-size: inherit;
   }
 }
+
+.modal {
+  &.show {
+    display: block;
+  }
+}

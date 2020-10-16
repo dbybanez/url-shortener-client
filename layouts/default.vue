@@ -1,10 +1,10 @@
 <template>
   <div>
     <Nuxt />
-    <save :status="showModal"/>
-    <!-- <div
+    <Save :status="modalStatus"/>
+    <div
       class="modal-backdrop fade show"
-      v-if="modalStatus"></div> -->
+      v-if="modalStatus"></div>
   </div>
 </template>
 
@@ -16,9 +16,7 @@ export default {
     Save
   },
   data () {
-    return {
-      showModal: this.modalStatus
-    }
+    return {}
   },
   computed: {
     ...mapGetters({
