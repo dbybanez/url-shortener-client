@@ -6,5 +6,5 @@ export default {
   getSlugHasError: state => state.slugHasError,
   getSlugErrorMessage: state => state.slugErrorMessage,
   getGeneratedStatus: state => state.generated,
-  getshowSaveModalStatus: state => state.showSaveModal
+  getModalOpenStatus: state => state.isModalOpen
 }

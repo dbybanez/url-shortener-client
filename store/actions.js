@@ -90,5 +90,6 @@ export default {
       status = true
       body.classList.add('modal-open')
     }
+    commit('setShowModalStatus', { status })
   }
 }

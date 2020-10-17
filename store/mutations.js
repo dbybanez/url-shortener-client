@@ -20,7 +20,7 @@ export default {
     state.generated = false
   },
   setShowModalStatus (state, { status }) {
-    state.showSaveModal = status
-    console.log(state.showSaveModal)
+    state.isModalOpen = status
+    console.log(state.isModalOpen)
   }
 }

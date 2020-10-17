@@ -20,7 +20,7 @@ export default {
   },
   computed: {
     ...mapGetters({
-      modalStatus: 'getshowSaveModalStatus'
+      modalStatus: 'getModalOpenStatus'
     })
   }
 }
