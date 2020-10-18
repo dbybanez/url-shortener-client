@@ -20,7 +20,7 @@
           <div class="modal-body">
             <h5 class="text-center">tinyy.link saved!</h5>
             <h4 class="text-center">ZCEWFG</h4>
-            <p class="text-center">Use this code to edit the URL. Visit the link below to edit the URL.</p>
+            <p class="text-center">To edit your URL, access the link below and enter the code above.</p>
             <p class="text-center">https://tinyy.link/slug/edit</p>
           </div>
           <div class="modal-footer border-top-0">
