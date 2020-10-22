@@ -18,16 +18,15 @@
             </button>
           </div>
           <div class="modal-body">
-            <h5 class="text-center">tinyy.link saved!</h5>
-            <h4 class="text-center">ZCEWFG</h4>
-            <p class="text-center">To edit your URL, access the link below and enter the code above.</p>
-            <p class="text-center">https://tinyy.link/slug/edit</p>
+            <h5 class="text-center mb-4">tinyy.link saved!</h5>
+            <p class="text-center">To edit your URL, click the link below and enter your unique code: <pre><code class="text-danger">ZCEWFG</code></pre></p>
+            <p class="text-center"><a href="https://tinyy.link/FEJWOVdw2/edit">https://tinyy.link/FEJWOVdw2/edit</a></p>
           </div>
           <div class="modal-footer border-top-0">
             <button
               type="button"
               class="btn btn-primary btn-block"
-              @click="openCloseModal">Got it, thanks!</button>
+              @click="openCloseModal">Awesome, thanks!</button>
           </div>
         </div>
       </div>
