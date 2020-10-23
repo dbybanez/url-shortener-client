@@ -19,7 +19,7 @@
           </div>
           <div class="modal-body">
             <h5 class="text-center mb-4">tinyy.link saved!</h5>
-            <p class="text-center">To edit your URL, click the link below and enter your unique code:  test<pre><code class="text-danger">ZCEWFG</code></pre></p>
+            <p class="text-center">To edit your URL, click the link below and enter your unique code: <pre><code class="text-danger">ZCEWFG</code></pre></p>
             <p class="text-center"><a href="https://tinyy.link/FEJWOVdw2/edit">https://tinyy.link/FEJWOVdw2/edit</a></p>
           </div>
           <div class="modal-footer border-top-0">
