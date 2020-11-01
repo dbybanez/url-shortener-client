@@ -27,6 +27,13 @@ export default {
       schema.validateSync({
         url
       })
+
+      if (url.includes('tinyy.link')) {
+        urlHasError = true
+        urlMsg = 'Don\'t be sneaky. Let me know if you find a bug. 🐜🐛'
+        throw new Error('Don\'t be sneaky. Let me know if you find a bug. 🐜🐛')
+      }
+
       urlHasError = false
       urlMsg = ''
       commit('setUrlErrorStatus', { urlHasError, urlMsg })

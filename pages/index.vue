@@ -7,8 +7,8 @@
             <h1 class="text-rbl mb-5 text-center">
               Logo
             </h1>
-            <h3 class="text-rbl text-center" v-if="getGeneratedStatus">Congratulations!</h3>
-            <p class="text-center mb-4" v-if="getGeneratedStatus">You have created a tinyy.link! <br />You're tinyy.link is:</p>
+            <h3 class="text-rbl text-center mb-5" v-if="getGeneratedStatus">Thank you for using tinyy.link!</h3>
+            <p class="text-center mb-3" v-if="getGeneratedStatus">You're tinyy.link is:</p>
             <Default v-if="!getGeneratedStatus"/>
             <Generated v-if="getGeneratedStatus"/>
           </div>

@@ -1,7 +1,7 @@
 <template>
   <div class="form">
     <div class="form-group">
-      <div class="input-group mb-3">
+      <div class="input-group mb-5">
         <input
           type="text"
           class="form-control"
