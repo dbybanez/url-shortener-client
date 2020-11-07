@@ -30,7 +30,7 @@ export default {
 
       if (url.includes('tinyy.link')) {
         urlHasError = true
-        urlMsg = 'Don\'t be sneaky. Let me know if you find a bug. 🐜🐛'
+        urlMsg = 'Don\'t be sneaky. Let me know if you find any bugs. 🐜🐛'
         throw new Error('Don\'t be sneaky. Let me know if you find a bug. 🐜🐛')
       }
 
