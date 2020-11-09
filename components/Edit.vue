@@ -14,10 +14,26 @@
       <input
         type="text"
         class="form-control"
+        placeholder="URL">
+    </div>
+    <div class="form-group">
+      <input
+        type="text"
+        class="form-control"
+        placeholder="Slug">
+    </div>
+    <div class="form-group">
+      <input
+        type="text"
+        class="form-control"
         placeholder="Code">
     </div>
     <button
       class="btn btn-primary btn-block">Edit URL</button>
+    <button
+      class="btn btn-success btn-block">Save</button>
+    <button
+      class="btn btn-light btn-block">Cancel</button>
   </div>
 </template>
 
