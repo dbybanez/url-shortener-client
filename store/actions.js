@@ -1,5 +1,5 @@
 import * as Yup from 'yup'
-// import axios from 'axios'
+import axios from 'axios'
 
 export default {
   validate ({ state, dispatch }, val) {
@@ -76,9 +76,33 @@ export default {
     const slugMsg = ''
     commit('setSlugErrorStatus', { slugHasError, slugMsg })
   },
-  generateURL ({ commit }, data) {
-    const generated = true
-    commit('setGeneratedStatus', { generated })
+  async generateURL ({ commit }, data) {
+    try {
+      const config = {
+        headers: {
+          Accept: 'application/json'
+        }
+      }
+      const body = {
+        url: data.url,
+        slug: data.slug || undefined
+      }
+      const response = await axios.post('http://localhost:5000/api/create', body, config)
+
+      if (response.data.status) {
+        const newUrl = response.data.data.url
+        const newLink = response.data.data.link
+        const newCode = response.data.data.code
+        const newSlug = response.data.data.slug
+        const generated = true
+        commit('setGeneratedStatus', { generated })
+        commit('setData', { newUrl, newLink, newCode, newSlug })
+      } else {
+        // console
+      }
+    } catch (error) {
+      console.log(error)
+    }
   },
   generateAnother ({ commit }) {
     commit('resetAll')

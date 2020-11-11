@@ -10,6 +10,12 @@ export default {
   setGeneratedStatus (state, { generated }) {
     state.generated = generated
   },
+  setData (state, { newUrl, newLink, newCode, newSlug }) {
+    state.url = newUrl
+    state.code = newCode
+    state.link = newLink
+    state.slug = newSlug
+  },
   resetAll (state) {
     state.url = ''
     state.code = ''

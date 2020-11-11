@@ -8,6 +8,7 @@
           placeholder=""
           aria-label=""
           aria-describedby="generated-link"
+          :value="getLink"
           readonly>
         <div class="input-group-append">
           <button class="btn btn-outline-secondary btn-icon" type="button" id="button-addon2"><i class="material-icons-round">content_copy</i></button>
@@ -26,13 +27,18 @@
 </template>
 
 <script>
-import { mapActions } from 'vuex'
+import { mapActions, mapGetters } from 'vuex'
 export default {
   name: 'Generated',
   methods: {
     ...mapActions({
       generateAnother: 'generateAnother',
       saveURL: 'saveURL'
+    })
+  },
+  computed: {
+    ...mapGetters({
+      getLink: 'getLink'
     })
   }
 }
