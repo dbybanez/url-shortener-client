@@ -22,7 +22,7 @@
       class="btn btn-outline-primary btn-block mb-5"
       @click="saveURL">Save tinyy.link for later</button>
     <button
-      class="btn btn-dark btn-block">Support this project</button>
+      class="btn btn-dark btn-block">Support this project </button>
   </div>
 </template>
 
