@@ -8,5 +8,5 @@ export default {
   getSlugHasError: state => state.slugHasError,
   getSlugErrorMessage: state => state.slugErrorMessage,
   getGeneratedStatus: state => state.generated,
-  getModalOpenStatus: state => state.isModalOpen
+  getModalOpenStatus: state => state.isModalOpen 
 }
